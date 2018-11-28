@@ -1,0 +1,80 @@
+.slider {
+  background: -webkit-gradient(linear, left top, right top, from(#cdced2), to(#c5c6ca));
+  background: -webkit-linear-gradient(left, #cdced2, #c5c6ca);
+  background: -o-linear-gradient(left, #cdced2, #c5c6ca);
+  background: linear-gradient(90deg, #cdced2, #c5c6ca); }
+  .slider-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 60px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .slider-img {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
+    .slider-img img {
+      display: block;
+      max-width: 100%; }
+  .slider-info {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+    padding-left: 70px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .slider-info p {
+      font-size: 14px;
+      line-height: 26px;
+      color: #535353;
+      margin: 25px 0; }
+  .slider p.slider-title {
+    font-size: 116px;
+    line-height: 107px;
+    font-weight: 600;
+    letter-spacing: 2.32px;
+    text-transform: uppercase; }
+  .slider p.slider-type {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #000; }
+    .slider p.slider-type span {
+      font-size: 14px;
+      letter-spacing: 1.12px;
+      font-weight: 300;
+      margin-left: 25px; }
+  .slider-icons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin: 25px 0; }
+    .slider-icons a {
+      width: 37px;
+      height: 37px;
+      border: 1px solid #000;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      margin-right: 20px;
+      position: relative; }
+      .slider-icons a:first-of-type {
+        background-color: #000; }
+      .slider-icons a:last-of-type {
+        margin-right: 0; }
+      .slider-icons a img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }

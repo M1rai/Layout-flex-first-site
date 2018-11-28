@@ -1,0 +1,165 @@
+.offers
+	display: flex
+	justify-content: space-between
+	margin: 50px 0 25px
+
+	&-left,
+	&-right
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+	&-element
+		position: relative
+
+		img
+			display: block
+			max-width: 100%
+		
+		a
+			@include btn()
+
+		p
+			margin: 10px
+
+		& .offers-categories
+			font-size: 13px
+			line-height: 36px
+			letter-spacing: 0.65px
+			font-weight: 500
+			color: #292929
+
+		& .offers-name
+			font-size: 19px
+			line-height: 24px
+			font-weight: 700
+			letter-spacing: 1.425px
+			color: #2d2b27
+			text-transform: uppercase
+
+
+	&-info
+		position: absolute
+		z-index: 1
+		left: 30px
+
+	&-new
+		position: absolute
+		right: 10px
+		top: 10px
+		font-size: 11px
+		line-height: 14px
+		padding: 5px 10px
+		background-color: #000
+		color: #fff
+		text-transform: uppercase
+		letter-spacing: 0.55px
+
+		&::before
+			content: ""
+			border: 10px solid transparent
+			border-left: 10px solid #000
+			position: absolute
+			left: 0
+			bottom: -9px
+
+	&-center
+		margin: 0 2%
+
+		& .offers-info
+			top: 105px
+
+	&-left
+
+		& .offers-info
+			left: 0
+			bottom: 15px
+			width: 100%
+
+		& .offers-two__get
+			text-align: center
+			font-size: 22px
+			line-height: 25px
+			text-transform: uppercase
+			letter-spacing: 1.65px
+			font-weight: 700
+			color: #2d2b27
+			margin: 0
+
+	&-right
+
+		& .offers-info
+			top: 50px
+
+	&-element__glasses
+
+		& .offers-info
+			left: 0
+			bottom: 10px
+			width: 100%
+			top: auto
+
+		p
+			text-align: center
+			font-weight: 700
+			color: #2d2b27
+			text-transform: uppercase
+			font-size: 13px
+			line-height: 25px
+			letter-spacing: 0.65px
+
+@media screen and (max-width: 1024px)
+	
+	.offers
+		flex-wrap: wrap
+
+		&-right
+			flex-basis: 100%
+			display: block
+
+		&-element
+			max-width: 371px
+			margin: 20px auto
+
+		&-center
+			margin: 0
+
+@media screen and (max-width: 800px)
+
+	.offers
+
+		&-left
+			flex-basis: 100%
+			display: block
+
+			.offers-element
+			max-width: 277px
+			margin: 20px auto
+
+		&-center
+			flex-basis: 100%
+			display: block
+
+			.offers-element
+				max-width: 470px
+				margin: 0 auto
+	
+@media screen and (max-width: 768px)
+
+	.offers
+		margin: 25px 0
+
+		&-center
+
+			.offers-info
+				top: 50px
+
+		&-right
+
+			.offers-info
+				top: 15px
+
+		&-element__glasses
+
+			.offers-info
+				top: auto

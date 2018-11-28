@@ -1,0 +1,35 @@
+.categories {
+  margin: 40px 0; }
+  .categories ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .categories ul li {
+      margin: 10px 23px; }
+      .categories ul li a {
+        color: #2d2b27;
+        text-decoration: none;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 1.9px;
+        border-bottom: 1px solid transparent;
+        display: inline-block; }
+        .categories ul li a:hover {
+          border-bottom-color: #2d2b27; }
+
+@media screen and (max-width: 768px) {
+  .categories {
+    margin: 25px 0; }
+    .categories li {
+      margin: 5px; }
+      .categories li a {
+        font-size: 16px; } }

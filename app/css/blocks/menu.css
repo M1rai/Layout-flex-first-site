@@ -1,0 +1,24 @@
+.menu ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .menu ul a {
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 23px;
+    font-weight: 300;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    letter-spacing: 0.96px;
+    margin: 0 3px; }
+    .menu ul a:hover {
+      border-bottom-color: #000; }
